@@ -58,11 +58,60 @@
                 <div class="col"><img src="/assets/portfolio/work8.jpg" alt="" width="200px" height="200px"></div>
             </div>
         </div>
-        
 
+        <div class="contact">
+            <h3>CONTACT US</h3>
 
-       
-    </section>
+            <div id="name">
+                <input type="text"  placeholder="Name...">
+            </div>
+            <div id="email">
+                <input type="text" placeholder="Email...">
+            </div>
+            <div id="message">
+                <input type="text"  placeholder="Your message here...">
+            </div>
+        </div>
+      </section>
+
+            <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
+            <script>
+              /* paste this in verbatim */
+              window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};
+            
+              /* customize formbutton here*/     
+              formbutton("create", {
+                action: "https://formspree.io/YOUR_FORM_ID",
+                title: "How can we help?",
+                fields: [
+                  { 
+                    type: "email", 
+                    label: "Email:", 
+                    name: "email",
+                    required: true,
+                    placeholder: "your@email.com"
+                  },
+                  {
+                    type: "textarea",
+                    label: "Message:",
+                    name: "message",
+                    placeholder: "What's on your mind?",
+                  },
+                  { type: "submit" }      
+                ],
+                styles: {
+                  title: {
+                    backgroundColor: "gray"
+                  },
+                  button: {
+                    backgroundColor: "gray"
+                  }
+                },
+                initiallyVisible: true
+              });
+            </script>
+
     
 </body>
 </html>
