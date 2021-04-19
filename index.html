@@ -9,9 +9,16 @@
     <title>Delani Studio</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+   <script src="/js/scripts.js"></script>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+    </style>
+    
   </head>
   <body>
-    <section>
+    <section> 
       <div class="header">
         <img src="/assets/logo/logo.png" alt="logo" />
         <h1>welcome<br />to delani studio</h1>
@@ -52,25 +59,66 @@
           the pieces you need.
         </p>
       </div>
-      <div class="whatwedo">
-        <h3>WHAT WE DO</h3>
-        <p><img src="/assets/services_icons/design_icon.png" alt="" /></p>
-        <div class="desc">DESIGN</div>
-        <p><img src="/assets/services_icons/dev_icon.png" alt="" /></p>
-        <div class="desc">DEVELOPMENT</div>
-        <p><img src="/assets/services_icons/product_icon.png" alt="" /></p>
-        <div class="desc">PRODUCT MANAGEMENT</div>
+      <div class="row">
+        <h3 class="whatwedo" style="text-align: center;">WHAT WE DO</h3>
+        <div class="designIcon">
+          <img src="/assets/services_icons/design_icon.png" id="img1" alt="">
+        </div>
+        <div class="desc">
+          <h5 div class="design">DESIGN</h5>
+          <div id="Z">
+            <p>Our design practice offers a full range of services including<br>
+            brand strategy, interaction and visual design and user experience testing.<br>
+            Throughout your project,our designers create and implement visual<br>
+              design and workflows,solicit user feedback,and work with you to make<br>
+              sure what gets built is what is needed.
+            </p>
+          </div>
+        </div>
+      
+        <div class="devIcon">
+          <img src="/assets/services_icons/dev_icon.png" id="img2"  alt="">
+        </div>
+        <div class="desc">
+          <h5 class="dev">DEVELOPMENT</h5>
+          <div id="D">
+            <p>All engineers are fluent in the latest enterprise, mobile and web<br>
+            development technologies.<br>
+          They collaborate with your team to write, and improve code on a daily basis,<br>
+        using proven practices such as test-driven development and pair programming</p>
+          </div>
+        </div>
+        <div class="productIcon">
+          <img src="/assets/services_icons/product_icon.png" id="img3" alt="">
+        </div>
+        <div class="desc">
+          <h5 class="prod">PRODUCT MANAGEMENT</h5>
+          <div id="N">
+            <p>Planning and developmentis iteractive.Because we are constantly coding<br>
+              and testing,the products we build are always ready togo live.<br>
+            The iteractive process allows for changes as business requirements evolve</p>
+          </div>
+        </div>
+      </div>
+ </div>
+   
+   </div>
       </div>
       <div id="portfolio">
         <h3>PORTFOLIO</h3>
         <div class="row">
           <div class="col">
-            <img
+            <div id="hover1" class="hover">
+              <div id="img-text1" class="imgtext">
+                <h4><strong>delani<br>studio</strong> </h4>
+              </div>
++            <img
               src="/assets/portfolio/work4.jpg"
               alt=""
               width="200px"
               height="200px"
             />
+          </div>
           </div>
           <div class="col">
             <img
@@ -210,51 +258,7 @@
         <p>delani studio<br />2019</p>
       </div>
     </footer>
-    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-
-    <script>
-      /* paste this in verbatim */
-      window.formbutton =
-        window.formbutton ||
-        function () {
-          (formbutton.q = formbutton.q || []).push(arguments);
-        };
-
-      /* customize formbutton here*/
-      formbutton("create", {
-        action: "https://formspree.io/YOUR_FORM_ID",
-        title: "How can we help?",
-        fields: [
-          {
-            type: "email",
-            label: "Email:",
-            name: "email",
-            required: true,
-            placeholder: "your@email.com",
-          },
-          {
-            type: "textarea",
-            label: "Message:",
-            name: "message",
-            placeholder: "What's on your mind?",
-          },
-          { type: "submit" },
-        ],
-        styles: {
-          title: {
-            backgroundColor: "gray",
-          },
-          button: {
-            backgroundColor: "gray",
-          },
-        },
-        initiallyVisible: true,
-      });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-     crossorigin="anonymous"></script>
-     <script src="/js/scripts.js"></script>
-     
-
+    
+      
   </body>
 </html>
