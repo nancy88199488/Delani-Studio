@@ -27,7 +27,9 @@ To access this project on your local files, you can clone it using these steps
 * Jquery
 
 ### Live Site
-View [live]
+View [live](https://nancy88199488.github.io/Delani-Studio/)
+
+
 
 ### Contacts
 Email:nancykemuntosalome@gmail.com
