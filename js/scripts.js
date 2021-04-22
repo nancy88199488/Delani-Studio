@@ -78,3 +78,11 @@ $(document).ready(function () {
     $("#imgtext8").toggle();
   });
 });
+$("form#mc-embedded-subscribe-form").submit(function (even) {
+  let name = $("input#mce-FNAME").val();
+  if (name.length === 0) {
+    alert("Enter Your Full Name")
+  } else {
+    alert("Hello " + name + ",thank you we have received you message.")
+  }
+})
