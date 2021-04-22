@@ -45,9 +45,9 @@ h1 {
   text-align: center;
   color: white;
   justify-content: center;
-  padding-top: 150px;
-  margin-top: 40px;
-  height: 400px;
+  padding-top: 110px;
+  margin-top: 30px;
+  height: 300px;
 }
 
 
@@ -157,7 +157,7 @@ textarea {
 #social {
   display: block;
   margin-top: 40px;
-  padding-top: 150px;
+  padding-top: 160px;
   color: black;
   text-transform: uppercase;
 
